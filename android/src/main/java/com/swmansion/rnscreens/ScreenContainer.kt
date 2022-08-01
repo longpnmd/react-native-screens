@@ -226,7 +226,7 @@ open class ScreenContainer<T : ScreenFragment>(context: Context?) : ViewGroup(co
         mFragmentManager?.let {
             if (!it.isDestroyed) {
                 removeMyFragments(it)
-                it.executePendingTransactions()
+                // it.executePendingTransactions()
             }
         }
 
