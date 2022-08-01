@@ -213,7 +213,7 @@ open class ScreenContainer<T : ScreenFragment>(context: Context?) : ViewGroup(co
         }
 
         if (hasFragments) {
-            transaction.commitNowAllowingStateLoss()
+            transaction.commitAllowingStateLoss() //transaction.commitNowAllowingStateLoss()
         }
     }
 
